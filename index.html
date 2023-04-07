@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cassia Infrastructure</title>
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./custom.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- 
+    - #HEADER
+  -->
+  <header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top">
+      <div class="container">
+
+        <ul class="header-top-list">
+
+          <li>
+            <a href="mailto:info@cassiaInfrastructure.com" class="header-top-link">
+              <ion-icon name="mail-outline"></ion-icon>
+
+              <span>info@cassiaInfrastructure.com</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="header-top-link">
+              <ion-icon name="location-outline"></ion-icon>
+
+              <address>Kakkanad, Kochi</address>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="wrapper">
+          <ul class="header-top-social-list">
+
+            <li>
+              <a href="https://www.facebook.com/Cassia-Infrastructure-100225406122465" class="header-top-social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://twitter.com/cassiainfrastr1" class="header-top-social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/company/cassia-infrastructure/?viewAsMember=true" class="header-top-social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/cassiainfrastructure/" class="header-top-social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+          <button class="header-top-btn" onclick="openForm()">Contact Us</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+
+        <a href="https://cassiainfrastructure.com/" class="logo">
+          <img src="./assets/images/Logo-2.png" alt="Cassia Infrastructure logo" style="width:226px; height: 137px;">
+        </a>
+
+        <nav class="navbar" data-navbar onclick="void(0)">
+
+          <div class="navbar-top" onclick="void(0)">
+
+            <a href="https://cassiainfrastructure.com/" class="logo">
+              <img src="./assets/images/Logo-2.png" alt="Cassia Infrastructure logo" style="width:226px; height: 137px;">
+            </a>
+
+            <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <div class="navbar-bottom" onclick="void(0)">
+            <ul class="navbar-list">
+
+              <li>
+                <a href="https://cassiainfrastructure.com/" class="navbar-link" data-nav-link>Home</a>
+              </li>
+
+              <li>
+                <a href="#about" class="navbar-link" data-nav-link>About</a>
+              </li>
+
+              <li>
+                <a href="#service" class="navbar-link" data-nav-link>Service</a>
+              </li>
+
+              <li>
+                <div class="dropdown">
+                  <button class="navbar-link">Projects <i class="fa fa-caret-down"></i> </button>
+                  <div class="dropdown-content">
+                    <a href="orchards" class="navbar-link" data-nav-link style="padding: 12px 16px;">Orchards</a>
+                  </div>
+                </div>
+                <!-- <a href="orchards" class="navbar-link" data-nav-link>Projects</a> -->
+              </li>
+
+              <li>
+                <a href="https://cassiainfrastructure.com/orchards#gallery" class="navbar-link" data-nav-link>Gallery</a>
+              </li>
+
+              <li>
+                <a href="contact" class="navbar-link" data-nav-link>Contact</a>
+              </li>
+
+            </ul>
+          </div>
+
+        </nav>
+
+        <div class="header-bottom-actions">
+          <button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Open Menu">
+            <ion-icon name="menu-outline"></ion-icon>
+            <span>Menu</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+
+      <section class="hero" id="home" style="background-image: url(./assets/images/CASSIA.png); height: 700px">
+        <div class="container">
+
+          <div class="hero-content">
+            <h2 class="h1 hero-title">WELCOME</h2>
+            <h2 class="h1 hero-title">TO A WORLD</h2>
+            <h2 class="h1 hero-title" style="color:green">BEYOND</h2>
+          </div>
+
+          <!-- <figure class="hero-banner">
+            <img src="./assets/images/day.png" alt="Modern house model" class="w-100">
+          </figure> -->
+
+        </div>
+      </section>
+      <!--
+      <section >
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slides">
+              <div id="slides__1" class="slide">
+                <img src="./assets/images/1.png">
+                <a class="slide__prev" href="#slides__4" title="Next"></a>
+                <a class="slide__next" href="#slides__2" title="Next"></a>
+              </div>
+              <div id="slides__2" class="slide">
+                <img src="./assets/images/2.png">
+                <a class="slide__prev" href="#slides__1" title="Prev"></a>
+                <a class="slide__next" href="#slides__3" title="Next"></a>
+              </div>
+              <div id="slides__3" class="slide">
+                <img src="./assets/images/3.png">
+                <a class="slide__prev" href="#slides__2" title="Prev"></a>
+                <a class="slide__next" href="#slides__4" title="Next"></a>
+              </div>
+              <div id="slides__4" class="slide">
+                <img src="./assets/images/main.jpg">
+                <a class="slide__prev" href="#slides__3" title="Prev"></a>
+                <a class="slide__next" href="#slides__1" title="Prev"></a>
+              </div>
+            </div>
+            <div class="slider__nav">
+              <a class="slider__navlink" href="#slides__1"></a>
+              <a class="slider__navlink" href="#slides__2"></a>
+              <a class="slider__navlink" href="#slides__3"></a>
+              <a class="slider__navlink" href="#slides__4"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      -->
+      <section class="about" id="projects">
+        <h2 class="h2 section-title" style="text-align: center;
+        margin-left: auto;
+        display: block;
+        margin-right: auto;">Our Projects</h2>
+        <div class="container">
+          <figure class="about-banner">
+            <img src="./assets/images/2.png" alt="">
+          </figure>
+
+          <div class="about-content" style="text-align: center;
+          margin-left: auto;
+          display: block;
+          margin-right: auto;">
+
+
+            <img src="./assets/images/Logo-1.png" alt="Cassia Infrastructure logo" style="margin-left: auto; margin-right: auto; width:271px; height: 106px;">
+            <a href="https://cassiainfrastructure.com/orchards#location" style="margin-left: auto; margin-right: auto; display: inline-block">View Location</a>
+
+            <br class="about-text">
+              LUXURY VILLAS, KAKKANAD, KOCHI<br>
+            </p>
+            <br>
+            <p class="about-text">
+              The Orchard is a beautiful and complex community where trees, plants and birds live in delicate balance....
+We welcome you to experience living in Orchards that is nothing short of supreme happiness. Walk across the Orchards will take you through acres of fruit bearing trees and lush greenery, where the sound of chirping birds fill the air with lovely melodious chatter, ensuring aesthetic comfort and modern technology to immaculate architecture and landscape .
+            </p>
+            <button class="btn cta-btn">
+              <a href="https://cassiainfrastructure.com/orchards#about">READ MORE</a>
+            </button>
+          </div>
+
+        </div>
+      </section>
+      <!-- 
+        - #ABOUT
+      -->
+      <section class="about" id="about">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner-1.png" alt="House interior">
+
+            <img src="./assets/images/170.png" class="abs-img">
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">About Us</p>
+
+            <h2 class="h2 section-title">Cassia Infrastructure</h2>
+
+            <p class="about-text">
+              Cassia Infrastructure is one of Kerala's top real estate developers and builders, with years of expertise
+              and a reputation for producing affordable luxury houses and villas at competitive costs. Cassia is
+              dedicated to giving you exactly what you want in a dream home, with unrivalled quality, comfort,
+              convenience, and elegance. For the most inexpensive houses and villa developments in and around Kochi, we
+              are the name to remember. Cassia Infrastructure can provide you with the house of your dreams at the most
+              inexpensive costs, with properties all across Kochi in premium and accessible places such as Kakkanad,
+              Pallikkara, Kizhakkambalam, and others.
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+                <div class="about-item-icon">
+                  <ion-icon name="home-outline"></ion-icon>
+                </div>
+                <p class="about-item-text">Smart Home Design</p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-item-icon">
+                  <ion-icon name="leaf-outline"></ion-icon>
+                </div>
+                <p class="about-item-text">Beautiful Scene Around</p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-item-icon">
+                  <ion-icon name="wine-outline"></ion-icon>
+                </div>
+                <p class="about-item-text">Exceptional Lifestyle</p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-item-icon">
+                  <ion-icon name="shield-checkmark-outline"></ion-icon>
+                </div>
+                <p class="about-item-text">Complete 24/7 Security</p>
+              </li>
+
+            </ul>
+
+            <p class="callout">
+              “The house you looked at today and wanted to think about until tomorrow may be the same house someone
+              looked at yesterday and will buy today.”
+            </p>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="featured-boxes-area">
+        <div class="container">
+          <div class="featured-boxes-inner">
+            <h2 class="h2 section-title"">Why Choose Cassia Infrastructure</h2>
+            <div class="row">
+              <div class="col">
+                <div class="single-featured-box">
+                  <div class="icon color-fb7756"><img
+                      src="./assets/images/i-560b1ebc23740360b76939a09de.svg" width="85"
+                      height="85" alt=""></div>
+                  <h3 class="mt-5">Prime Locations.</h3>
+                  <p>With Cassia, you may enjoy Kochi's interconnectivity, fast-paced living, international standards, and infrastructure advancements.</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="single-featured-box">
+                  <div class="icon color-fb7756"><img
+                      src="./assets/images/i-660b1ebf314217-1-60b7694446bf4.svg"
+                      width="85" height="85" alt=""></div>
+                  <h3 class="mt-5">Quality and Class</h3>
+                  <p>We are here to provide you with the home of your dreams that is of the highest calibre and quality!</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="single-featured-box">
+                  <div class="icon color-fb7756"><img
+                      src="./assets/images/i-760a6a5fed0ede.svg" width="85" height="85"
+                      alt=""></div>
+                  <h3 class="mt-5">Luxury made affordable.</h3>
+                  <p>Anyone of our operations, from building to handover, are completed by us with no intermediaries, making our luxury projects accessible to all!</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="single-featured-box">
+                  <div class="icon color-fb7756"><img
+                      src="./assets/images/i-860a6a60525f1d.svg" width="85" height="85"
+                      alt=""></div>
+                  <h3 class="mt-5">Professionalism.</h3>
+                  <p>Our professional staff is here to help you and exceed your expectations to the best of our skills and competency.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+        - #BLOG
+      -->
+      <section class="blog" id="blog">
+        <div class="container">
+
+          <h2 class="h2 section-title">Latest Projects Updates</h2>
+
+          <ul class="blog-list has-scrollbar">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/1.png" alt="The Most Inspiring Interior Design Of 2022" class="w-100">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-content-top">
+
+                    <h3 class="h3 blog-title">
+                      <a href="#">Unveiling The Most Cherished Lifestyle</a>
+                    </h3>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/2.png" alt="Recent Commercial Real Estate Transactions" class="w-100">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-content-top">
+
+                    <h3 class="h3 blog-title">
+                      <a href="#">53 Eco-friendly Luxury Villas</a>
+                    </h3>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/3.png" alt="Renovating a Living Room? Experts Share Their Secrets"
+                    class="w-100">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-content-top">
+
+                    <h3 class="h3 blog-title">
+                      <a href="#">The Most Happening Residential Locality at Kochi</a>
+                    </h3>
+
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+      - #PROPERTY
+      -->
+      <section class="property" id="property">
+        <div class="container">
+
+          <p class="section-subtitle">Properties</p>
+
+          <h2 class="h2 section-title">Featured Properties</h2>
+
+          <ul class="property-list has-scrollbar">
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/140.png" alt="New Villa Nice View" class="w-100">
+                  </a>
+
+                  <div class="banner-actions">
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="location"></ion-icon>
+
+                      <address>Kakkanad, Kochi</address>
+                    </button>
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="camera"></ion-icon>
+
+                      <span>4</span>
+                    </button>
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="film"></ion-icon>
+
+                      <span>2</span>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">
+                    <a href="#">New Villa Nice View</a>
+                  </h3>
+
+                  <p class="card-text">
+                    
+                  </p>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <strong>3</strong>
+
+                      <ion-icon name="bed-outline"></ion-icon>
+
+                      <span>Bedrooms</span>
+                    </li>
+
+                    <li class="card-item">
+                      <strong>1400</strong>
+
+                      <ion-icon name="square-outline"></ion-icon>
+
+                      <span>Square Ft</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/170.png" alt="Modern Villas" class="w-100">
+                  </a>
+
+                  <div class="banner-actions">
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="location"></ion-icon>
+
+                      <address>Kakkanad, Kochi</address>
+                    </button>
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="camera"></ion-icon>
+
+                      <span>4</span>
+                    </button>
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="film"></ion-icon>
+
+                      <span>2</span>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+
+
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Modern Villas</a>
+                  </h3>
+
+                  <p class="card-text">
+                    
+                  </p>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <strong>3</strong>
+
+                      <ion-icon name="bed-outline"></ion-icon>
+
+                      <span>Bedrooms</span>
+                    </li>
+
+                    <li class="card-item">
+                      <strong>1700</strong>
+
+                      <ion-icon name="square-outline"></ion-icon>
+
+                      <span>Square Ft</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/200.png" alt="Comfortable Villa" class="w-100">
+                  </a>
+
+                  <div class="banner-actions">
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="location"></ion-icon>
+
+                      <address>Kakkanad, Kochi</address>
+                    </button>
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="camera"></ion-icon>
+
+                      <span>4</span>
+                    </button>
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="film"></ion-icon>
+
+                      <span>2</span>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+
+
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Comfortable Villa</a>
+                  </h3>
+
+                  <p class="card-text">
+                    
+                  </p>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <strong>4</strong>
+
+                      <ion-icon name="bed-outline"></ion-icon>
+
+                      <span>Bedrooms</span>
+                    </li>
+
+                    <li class="card-item">
+                      <strong>2000</strong>
+
+                      <ion-icon name="square-outline"></ion-icon>
+
+                      <span>Square Ft</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/240.png" alt="Luxury villa in Rego Park" class="w-100">
+                  </a>
+
+                  <div class="banner-actions">
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="location"></ion-icon>
+
+                      <address>Kakkanad, Kochi</address>
+                    </button>
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="camera"></ion-icon>
+
+                      <span>4</span>
+                    </button>
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="film"></ion-icon>
+
+                      <span>2</span>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+
+
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Luxury villa in Rego Park</a>
+                  </h3>
+
+                  <p class="card-text">
+                    
+                  </p>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <strong>4</strong>
+
+                      <ion-icon name="bed-outline"></ion-icon>
+
+                      <span>Bedrooms</span>
+                    </li>
+
+                    <li class="card-item">
+                      <strong>2400</strong>
+
+                      <ion-icon name="square-outline"></ion-icon>
+
+                      <span>Square Ft</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #CTA
+      -->
+      <section class="cta">
+        <div class="container">
+
+          <div class="cta-card">
+            <div class="card-content">
+              <h2 class="h2 card-title">Looking for your dream home?</h2>
+
+              <p class="card-text">We can help you realize your dream of a new home</p>
+            </div>
+
+            <button class="btn cta-btn" href="https://cassiainfrastructure.com/orchards">
+              <span>Explore Properties</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+  <!-- 
+    - #FOOTER
+  -->
+  <a href="" class="float" target="_blank">
+      <i class="fa fa-whatsapp my-float"></i>
+  </a>  
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="https://cassiainfrastructure.com/" class="logo">
+            <img src="./assets/images/Logo-2.png" alt="Cassia Infrastructure logo" style="width:226px; height: 137px;">
+          </a>
+
+          <p class="section-text">
+            Cassia Infrastructure is one of Kerala's top real estate developers and builders, with years of expertise
+              and a reputation for producing affordable luxury houses and villas at competitive costs.
+          </p>
+
+        </div>
+
+        <div class="footer-brand">
+          <ul class="contact-list">
+
+            <li>
+              <a href="#" class="contact-link">
+                <ion-icon name="location-outline"></ion-icon>
+
+                <address>Kakkanad, Kochi,  Kerela, India</address>
+              </a>
+            </li>
+
+            <li>
+              <a href="tel:+91 9342500800" class="contact-link">
+                <ion-icon name="call-outline"></ion-icon>
+
+                <span>+91 9342500800</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:sales@cassiainfrastructure.com" class="contact-link">
+                <ion-icon name="mail-outline"></ion-icon>
+
+                <span>sales@cassiainfrastructure.com</span>
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://www.facebook.com/Cassia-Infrastructure-100225406122465" class="header-top-social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://twitter.com/cassiainfrastr1" class="header-top-social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/company/cassia-infrastructure/?viewAsMember=true" class="header-top-social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/cassiainfrastructure/" class="header-top-social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Company</p>
+            </li>
+
+            <li>
+              <a href="#about" class="footer-link">About Us</a>
+            </li>
+
+            <li>
+              <a href="https://cassiainfrastructure.com/orchards#gallery" class="footer-link">Gallery</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Location</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">FAQ</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact us</a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2022 Official Website of Cassia Infrastructure. All rights reserved.
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+  <div class="sticky">
+    <button class="header-top-btn" onclick="openForm()">Enquire Now</button>
+  </div>
+  <div class="form-popup" id="myForm">
+    <div class="login-box" id="login-box">
+      <button type="button" class="close" onclick="closeForm()">
+        <h2>X</h2>
+      </button>
+      <h3>ENQUIRY FORM</h3>
+      <form method="POST" onsubmit="return check();">
+        <div class="user-box">
+          <input type="text" name="" id="name" placeholder="Name" required>
+        </div>
+        <div class="user-box">
+          <input type="tel" name="" id="phone" placeholder="Phone Number" required>
+        </div>
+        <div class="user-box">
+          <input type="text" name="" id="email" placeholder="Email Id" required>
+        </div>
+        <div class="user-box">
+          <input type="text" name="" id="comment" placeholder="Comment" required>
+        </div>
+        <button type="submit" onclick="check(event)" name="Submit">Submit </button>
+        <span class="span" id='message'>{{msg}}</span>
+      </form>
+    </div>
+
+  </div>
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    function check(event) {
+      event.preventDefault();
+      document.getElementById('message').innerHTML = "checking";
+
+      const url = "https://script.google.com/macros/s/AKfycbz9UG-N3DEDhYuwqass-F_iRghVl8zJBNo2N-CuuI9gc2M5xcSsPMieOcf_cNEN_9h46Q/exec?action=addUser";
+      const data = {
+        "name": document.getElementById('name').value,
+        'phone': document.getElementById('phone').value,
+        'email': document.getElementById('email').value,
+        'comment': document.getElementById('comment').value
+      };
+      const other_params = {
+        redirect: "follow",
+        headers: { "content-type": "text/plain;charset=utf-8" },
+        body: JSON.stringify(data),
+        method: "POST",
+      };
+      const element = document.getElementById('message');
+      fetch(url, other_params)
+        .then(function (response) {
+          if (response.ok) {
+            return response.json();
+          } else {
+            throw new Error("Could not reach the API: " + response.status());
+            element.classList.add('success');
+          }
+        }).then(function (data) {
+          alert("Thank you for getting in touch! We appreciate you contacting us. One of our colleagues will get back in touch with you soon!Have a great day!");
+          document.getElementById('message').innerHTML = "Success";
+          element.classList.add('success');
+          document.getElementById("myForm").style.display = "none";
+        }).catch(function (error) {
+          document.getElementById('message').innerHTML = "Success";
+          element.classList.add('success');
+        });
+      return true;
+    }
+  </script>
+</body>
+
+</html>
